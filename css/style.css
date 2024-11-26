@@ -38,6 +38,7 @@
     height: 80px;
     position: relative;
     z-index: 1;
+    
 }
 
 .visual-hidden {
@@ -138,6 +139,8 @@
     margin-top: 18px;
     font-size: 18px;
     color: white;
+    margin-bottom: 120px;
+
 }
 
 .main-easy-button {
@@ -153,6 +156,12 @@
     border-radius: 4px;
     line-height: 0;
     padding: 20px 40px;
+    text-decoration: none;
+    color: black;
+}
+
+.main-easy-button:hover{
+    background-color: white;
 }
 
 /* how it works */
@@ -266,7 +275,6 @@
 }
 
 .user-feedback{
-    float: left;
     width: 341px;
     height: 316px;
     cursor: pointer;
@@ -275,9 +283,12 @@
     padding: 20px;
     margin: 10px 10px;
     border-radius: 8px;
-    align-self: center;
     background-color: white;
     box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+}
+
+.user-feedback:hover{
+    box-shadow: 0 0 15px 10px rgba(221, 221, 221, 1);
 }
 
 .user-feedback-text{
@@ -285,9 +296,7 @@
     flex-direction: column;
 }
 
-.user-feedback:hover{
-    box-shadow: 0 0 15px px rgba(221, 221, 221, 1);
-}
+
 
 .feedback-image {
     height: 44px;
@@ -420,7 +429,18 @@
     padding-left: 16px;
     font-size: 18px;
     border: none;
+}
 
+.form-input:hover {
+    background-color: white;
+    border: 1px solid #C2C8CD ;
+    padding: -1px;
+}
+
+.form-input:focus {
+    background-color: white;
+    border: 1px solid #C2C8CD;
+    outline: #C2C8CD ;
 }
 
 .form-input-left{
@@ -448,8 +468,11 @@
     height: 64px;
     width: 384px;
     justify-content: center;
-    padding-left: 16px;
     font-size: 18px;
     border: none;
+    cursor: pointer;
+}
 
+.form-button:hover {
+    background-color: #397DFF;
 }

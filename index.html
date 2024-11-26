@@ -12,22 +12,22 @@
             <img class="header-logo" src="/images/logo.svg" alt="Логотип">
             <ul class="navigation-list">
                 <li class="navigation-item">
-                    <a class="navigation-link" href="index.html">
+                    <a class="navigation-link" href="#how-it-works">
                         Как это работает?
                     </a>
                 </li>
                 <li class="navigation-item">
-                    <a class="navigation-link" href="index.html">
+                    <a class="navigation-link" href="#third-block">
                         3-й блок
                     </a>
                 </li>
                 <li class="navigation-item">
-                    <a class="navigation-link" href="index.html">
+                    <a class="navigation-link" href="#faq">
                         Вопросы и ответы
                     </a>
                 </li>
                 <li class="navigation-item">
-                    <a class="navigation-link" href="index.html">
+                    <a class="navigation-link" href="#form">
                         Форма
                     </a>
                 </li>
@@ -40,12 +40,12 @@
             <div class="main-text">
                 <h1 class="main-title">Говорят, никогда не поздно <br> сменить профессию</h1>
                 <p class="main-paragraph">Сделай круто тестовое задание и у тебя получится</p>
-                <button class="main-easy-button">Проще простого!</button>
+                <a class="main-easy-button" href="#how-it-works">Проще простого!</a>
             </div>
         </div>
 
         <div class="how-works-container">
-            <h2 class="block-title">Как это работает</h2>
+            <h2 class="block-title" id="how-it-works">Как это работает</h2>
                 <div>
                     <ul class="how-works-text-container">
                         <li class="how-works-item">
@@ -92,7 +92,7 @@
         </div>
 
         <div class="third-block-container">
-            <div class="third-block-text-container">
+            <div class="third-block-text-container" id="third-block">
                 <h3 class="third-block-title">Круто, ты дошел до третьего блока</h3>
                 <p class="third-block-paragraph">
                     63% опрошенных пользовались кредитами из-за того, что не могли покрыть непредвиденные расходы свыше 15 000 ₽.
@@ -175,7 +175,7 @@
             </div>
             <img class="feedback-slider" src="/images/Group 96.svg" alt="Отображение переключения отзывов">
         </div>
-        <div class="faq-container">
+        <div class="faq-container" id="faq">
             <h2 class="block-title">
                 Вопросы и ответы
             </h2>
@@ -284,14 +284,14 @@
         </div>
         <div class="page-form-container">
             <h2 class="block-title">Отправь форму</h2>
-            <form class="">
+            <form id="form">
                 
                 <div class="form-inputs">
-                    <input class="form-input form-input-left" type="text" name="name" placeholder="Имя">
-                    <input class="form-input" type="number" name="phone" placeholder="Телефон">
+                    <input class="form-input form-input-left" type="text" name="name" placeholder="Имя" id="input-name" required>
+                    <input class="form-input" type="tel" name="phone" placeholder="Телефон" id="input-phone" required>
                 </div>
-                <input class="form-input-checkbox" type="checkbox" name="agree">
-                    <label for="form-input-checkbox" class="form-label">Согласен, отказываюсь</label>
+                <input class="form-input-checkbox" type="checkbox" name="agree" id="input-checkbox" required>
+                    <label for="input-checkbox" class="form-label">Согласен, отказываюсь</label>
                 <button class="form-button" type="submit">Отправить</button>
 
             </form>
