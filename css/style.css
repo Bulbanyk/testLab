@@ -30,22 +30,18 @@
     width: 100%;
     min-height: 100%;
     margin: 0 auto;
-
     background-color: #ffffff;
 }
 
 .page-header {
-    height: 80px;
+    height: 100px;
     position: relative;
     z-index: 1;
-    
 }
 
 .visual-hidden {
     visibility: hidden;
 }
-
-/*21431241254u7y908127409217849012724109-218*/
 
 .page-main {
     flex-grow: 1;
@@ -64,6 +60,7 @@
 /*header*/
 
 .header-navigation{
+    padding-top: 25px;
     display: flex;
     justify-content: space-between;
     
@@ -71,6 +68,9 @@
 
 .header-logo{
     margin-left: 330px;
+    width: 120px;
+    height: 24px;
+    margin-top: 13px;
 }
 
 .navigation-list {
@@ -101,8 +101,11 @@
     margin-top: 80px;
     height: 88px;
     border-top: 1px solid #ECEFF2;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+
+}
+.footer-text {
+    margin-top: 40px;
 }
 
 
@@ -332,8 +335,7 @@
 /* faq */
 
 .faq-container{
-    margin-top: 35px;
-    margin-left: 450px;
+    margin: 35px 0 20px 450px;
     width: 1008px;
     height: 792px;
     display: flex;
@@ -405,12 +407,9 @@
 
 .page-form-container {
     margin-top: 80px;
-    margin-left: 500px;
+    margin-left: 560px;
     width: 800px;
     height: 258px;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr);*/
  }
 
 
